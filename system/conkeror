@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#exec firefox --app /home/ivo/Downloads/conkeror/application.ini "$@"
+exec xulrunner /home/ivo/Downloads/conkeror/application.ini "$@"

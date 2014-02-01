@@ -1,0 +1,2 @@
+#! /usr/bin/sh
+emacsclient -e "(emms-track-description (emms-playlist-current-selected-track))" | sed s/\"//g

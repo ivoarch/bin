@@ -1,0 +1,5 @@
+#!/bin/sh
+# Installing|Making Zsh default shell
+
+pacman -S zsh
+chsh -s /bin/zsh ivo

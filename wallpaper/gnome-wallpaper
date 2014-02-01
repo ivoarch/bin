@@ -1,0 +1,18 @@
+#!/bin/sh
+
+#Seconds until next wallpaper
+time='5'
+
+#Wallpaper Options: centered, none, scaled, spanned, stretched, wallpaper, zoom
+option='spanned'
+
+#Folder where your wallpapers are
+path="$HOME/Pictures/Wallpapers"
+
+while [ 1 ]
+do
+    gsettings set org.gnome.desktop.background picture-uri file://"$(find $path -type f | shuf -n1)"
+    sleep .1
+    gsettings set org.gnome.desktop.background picture-options "$option"
+    sleep $time
+done
