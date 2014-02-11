@@ -7,10 +7,10 @@ if [ ! $( id -u ) -eq 0 ]; then
 fi
 
 echo -e "Installing emacs dependencies..."
-yum groupinstall "Development Tools"
-yum install gtk+-devel gtk2-devel
-yum install libXpm-devel libpng-devel giflib-devel libtiff-devel libjpeg-devel
-yum install ncurses-devel
+yum groupinstall -y "Development Tools"
+yum install -y gtk+-devel gtk2-devel
+yum install -y libXpm-devel libpng-devel giflib-devel libtiff-devel libjpeg-devel
+yum install -y ncurses-devel
 
 echo -e "Downloading emacs..."
 VERSION=24.3
