@@ -6,8 +6,6 @@ then
     exit;
 fi
 
-pacman -S git
-
 user_name=$1
 usere_mail=$2
 
@@ -18,3 +16,5 @@ git config --global user.email $user_mail
 git config --global credential.helper cache
 
 git config --global credential.helper 'cache --timeout=3600'
+
+git config --global push.default simple
