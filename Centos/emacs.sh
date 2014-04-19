@@ -1,7 +1,7 @@
 #!/bin/sh
 # Build Emacs from Source (Centos 6..)
 
-echo "Removing zsh..."
+echo "Removing emacs..."
 yum remove -y emacs
 
 echo -e "Installing missing dependencies..."
