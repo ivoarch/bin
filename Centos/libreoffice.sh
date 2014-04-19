@@ -23,7 +23,7 @@ rm -rf LibreOffice_${version}_Linux_x86_rpm LibreOffice_${version}_Linux_x86_rpm
 #cd LibreOffice_${version}_Linux_x86_64_rpm/RPMS
 #echo "Installing LibreOffice-$version..."
 #rpm -i *.rpm
-echo "Cleaning up..."
+#echo "Cleaning up..."
 #cd /usr/local/src
 #rm -rf LibreOffice_${version}_Linux_x86_64_rpm LibreOffice_${version}_Linux_x86_64_rpm.tar.gz
 
