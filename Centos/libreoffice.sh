@@ -1,6 +1,7 @@
 #!/bin/sh
 # Installing LibreOffice (Centos 6...)
 
+# LibreOffice version
 version=4.2.3
 
 ## 32-bit
