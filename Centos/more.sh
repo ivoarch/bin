@@ -1,25 +1,46 @@
 #!/bin/sh
 # More opcional apps for (Centos 6...)
 
-# Utilles
-yum install -y gnome-utils sshpass meld filezilla python-pip nodejs npm nmap
+# Administration
+yum install -y seahorse seahorse-plugins
 
-# Media
-yum install -y vlc rhythmbox mplayer ffmpeg
+# Accessories
+yum install -y gcalctool gnote file-roller
+
+# Archives
+yum install -y p7zip p7zip-plugins unrar
+
+# Development
+yum install -y meld python-pip nodejs npm mercurial
 
 # Graphics
 yum install -y inkscape gimp blender
 
-# Archives
-yum install -y file-roller p7zip
+# Gnome-tools
+yum install -y alacarte gconf-editor gnome-utils
 
 # Games
 yum install -y gnome-games gnome-games-extra
 
+# Server
+yum install -y sshpass filezilla vsftpd httpd
+
+# Media
+yum install -y audacity brasero vlc npapi-vlc rhythmbox mplayer mencoder ffmpeg gtk-recordmydesktop
+
+# Nautilus extensions
+yum install -y nautilus-actions nautilus-image-converter nautilus-open-terminal nautilus-sendto
+
+# Network - monitoring tool
+yum install -y nmap dsniff ettercap tcpdump sslstrip
+
+# Printer
+yum Install -y cups system-config-printer
+
 # Install PIL with JPEG support
-#yum install -y libjpeg-turbo libjpeg-turbo-devel
+yum install -y libjpeg-turbo libjpeg-turbo-devel
 
 # Install OpenJDK 1.7.0
-#yum install -y java-1.7.0-openjdk java-1.7.0-openjdk-devel
+yum install -y java-1.7.0-openjdk java-1.7.0-openjdk-devel
 
 exit
