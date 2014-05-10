@@ -10,6 +10,9 @@ yum install -y gcalctool gnote file-roller
 # Archives
 yum install -y p7zip p7zip-plugins unrar
 
+# Compiz
+yum install -y desktop-effects compiz-gnome
+
 # Development
 yum install -y meld python-pip nodejs npm mercurial
 
