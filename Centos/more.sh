@@ -14,7 +14,7 @@ yum install -y p7zip p7zip-plugins unrar
 yum install -y desktop-effects compiz-gnome
 
 # Development
-yum install -y meld python-pip nodejs npm mercurial
+yum install -y meld python-pip nodejs npm mercurial ruby-devel dpkg-devel
 
 # Graphics
 yum install -y inkscape gimp blender
