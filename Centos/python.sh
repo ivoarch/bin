@@ -42,12 +42,14 @@ tar -xvf setuptools-1.4.2.tar.gz
 cd setuptools-1.4.2
 echo "Installing setuptools with python $python2_version"
 python2.7 setup.py install
+#python3.3 setup.py install
 echo "Cleaning up..."
 cd /usr/local/src
 rm -rf setuptools-1.4.2 setuptools-1.4.2.tar.gz
 
 echo "Installing pip..."
-curl https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python2.7 -
+easy_install-2.7 pip
+# easy_install-3.3 pip
 
 echo "Installing virtualenv..."
 pip2.7 install virtualenv
