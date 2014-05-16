@@ -6,9 +6,9 @@ yum remove -y emacs
 
 echo -e "Installing missing dependencies..."
 yum groupinstall -y "Development Tools"
-yum install -y gtk+-devel gtk2-devel
-yum install -y libXpm-devel libpng-devel giflib-devel libtiff-devel libjpeg-devel
-yum install -y ncurses-devel
+yum install -y \
+		gtk+-devel gtk2-devel ncurses-devel libXpm-devel libpng-devel libXaw \
+		liblockfile libotf libjpeg-devel giflib-devel m17n-db m17n-lib ImageMagick
 
 # Emacs version
 emacs_version=24.3
