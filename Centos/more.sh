@@ -23,7 +23,7 @@ yum install -y inkscape gimp blender
 yum install -y alacarte gconf-editor gnome-utils
 
 # Games
-yum install -y gnome-games gnome-games-extra
+yum install -y gnome-games gnome-games-extra fortune-mod cowsay
 
 # Server
 yum install -y sshpass filezilla vsftpd httpd
@@ -36,6 +36,9 @@ yum install -y nautilus-actions nautilus-image-converter nautilus-open-terminal 
 
 # Network - monitoring tool
 yum install -y nmap dsniff ettercap tcpdump sslstrip
+
+# Fonts
+yum install -y terminus-fonts-console
 
 # Printer
 yum Install -y cups system-config-printer
