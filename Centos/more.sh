@@ -43,6 +43,9 @@ yum install -y nmap dsniff ettercap tcpdump sslstrip
 # Fonts
 yum install -y terminus-fonts-console
 
+# Terminals
+yum install -y guake screen xterm rxvt-unicode-256color
+
 # Printer
 yum Install -y cups system-config-printer
 
