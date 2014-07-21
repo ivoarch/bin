@@ -1,10 +1,12 @@
 #!/bin/sh
+
+osarch=`uname -i`
+
 # EPEL: Extra Packages for Enterprise Linux (EPEL) is a volunteer-based community
 # effort from the Fedora project to create a repository of high-quality add-on
 # packages that complement the Fedora-based Red Hat Enterprise Linux (RHEL)
 # and its compatible spinoffs such as Centos or Scientific Linux.
-wget http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
-rpm -Uvh epel-release-6-8.noarch.rpm
+rpm -Uvh "http://download.fedoraproject.org/pub/epel/6/$osarch/epel-release-6-8.noarch.rpm"
 
 # Make sure to use the yum-priorities plugin with this repository:
 

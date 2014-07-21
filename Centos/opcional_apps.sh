@@ -5,7 +5,7 @@
 yum install -y gnome-system-monitor gnome-system-log htop ps_mem seahorse seahorse-plugins keepassx system-config-language keychecker
 
 # Accessories
-yum install -y gcalctool gnote file-roller
+yum install -y gcalctool gnote file-roller nano
 
 # Archives
 yum install -y p7zip p7zip-plugins unrar
@@ -45,6 +45,9 @@ yum install -y terminus-fonts-console
 
 # Terminals
 yum install -y guake screen xterm rxvt-unicode-256color
+
+# Torrent
+yum install -y transmission-gtk
 
 # Printer
 yum Install -y cups system-config-printer

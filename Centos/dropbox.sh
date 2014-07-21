@@ -1,11 +1,17 @@
 #!/bin/sh
-## Install Dropbox (Centos 6...)
+# Install Dropbox on Centos 6.5
 
-### 32-bit
-wget https://www.dropbox.com/download?dl=packages/fedora/nautilus-dropbox-1.6.0-1.fedora.i386.rpm
-yum Install -y nautilus-dropbox-1.6.0-1.fedora.i386.rpm
-### 64-bit
-#wget https://www.dropbox.com/download?dl=packages/fedora/nautilus-dropbox-1.6.0-1.fedora.x86_64.rpm
-#yum Install -y nautilus-dropbox-1.6.0-1.fedora.x86_64.rpm
+cat << 'EOF' > /etc/yum.repos.d/dropbox.repo
+[Dropbox]  
+name=Dropbox Repository
+#baseurl=http://linux.dropbox.com/fedora/$releasever/
+baseurl=http://linux.dropbox.com/fedora/19/  
+gpgkey=http://linux.dropbox.com/fedora/rpm-public-key.asc
+EOF
 
-exit
+echo "Updating..."
+yum update -y
+
+echo "Installing Dropbox..."
+yum install -y nautilus-dropbox
+

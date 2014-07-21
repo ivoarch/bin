@@ -4,6 +4,9 @@
 echo "Removing zsh..."
 yum remove -y zsh
 
+echo "Installing missing dependencies..."
+yum install -y ncurses-devel
+
 # Zsh version
 zsh_version=5.0.5
 
