@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Source from <https://www.centosblog.com>
 
 OLD_HOSTNAME="$( hostname )"
 NEW_HOSTNAME="$1"
