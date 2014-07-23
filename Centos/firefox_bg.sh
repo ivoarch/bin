@@ -1,8 +1,11 @@
 #!/bin/sh
 # Firefox на български.
 
+echo "Removing firefox..."
+yum remove -y firefox
+
 # Firefox version
-version=24.6.0esr
+version=24.7.0esr
 
 echo "Downloading Firefox-$version..."
 cd /usr/local/src
