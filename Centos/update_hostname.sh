@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
-# Source from <https://www.centosblog.com>
+# Based on script from <https://www.centosblog.com>
+
+if [ -z "$( egrep "CentOS|Redhat" /etc/issue)" ]; then
+    echo 'Only for Redhat or CentOS'
+    exit
+fi
 
 OLD_HOSTNAME="$( hostname )"
 NEW_HOSTNAME="$1"
