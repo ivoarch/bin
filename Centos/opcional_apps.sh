@@ -2,7 +2,7 @@
 # More opcional apps for (Centos 6...)
 
 # Administration
-yum install -y gnome-system-monitor gnome-system-log htop ps_mem seahorse seahorse-plugins keepassx system-config-language keychecker rpmreaper yum-utils
+yum install -y gnome-system-monitor gnome-system-log htop ps_mem seahorse seahorse-plugins keepassx system-config-language keychecker rpmreaper yum-utils beesu
 
 # Accessories
 yum install -y gcalctool gnote file-roller nano
@@ -35,7 +35,7 @@ yum install -y sshpass filezilla vsftpd httpd noip
 yum install -y audacity brasero vlc npapi-vlc rhythmbox mplayer mencoder ffmpeg gtk-recordmydesktop
 
 # Nautilus extensions
-yum install -y nautilus-actions nautilus-image-converter nautilus-open-terminal nautilus-sendto
+yum install -y nautilus-actions nautilus-image-converter nautilus-open-terminal nautilus-sendto nautilus-beesu-manager
 
 # Network - monitoring tool
 yum install -y nmap dsniff ettercap tcpdump sslstrip
