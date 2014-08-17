@@ -34,7 +34,7 @@ fi
 
 read -p "Do you want to restart networking on your server to make sure that changes will be persistent on reboot? [yn]" answer
 if [[ $answer = y ]] ; then
-    service network restart
+    /sbin/service network restart
 fi
 
 echo "[Done] Your hostname has been set to $NEW_HOSTNAME"
