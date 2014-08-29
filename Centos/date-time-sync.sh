@@ -1,5 +1,5 @@
 #!/bin/sh
-# Sync Time and Date on Centos
+# Sync Time and Date on RHEL/CentOS linux
 
 # install NTP (Network Time Protocol)
 yum install -y ntp
@@ -14,5 +14,8 @@ hwclock --systohc
 /sbin/service ntpd start
 # checking current time-date
 date
+# report the synchronisation state of the NTP daemon
+ntpstat
+ntpq -pn
 
 exit

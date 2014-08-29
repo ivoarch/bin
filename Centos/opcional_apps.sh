@@ -29,16 +29,16 @@ yum install -y ls_sensors hddtemp
 yum install -y gnome-games gnome-games-extra fortune-mod cowsay
 
 # Server
-yum install -y sshpass filezilla vsftpd httpd noip
+yum install -y sshpass filezilla vsftpd httpd noip lighttpd
 
 # Media
-yum install -y audacity brasero vlc npapi-vlc rhythmbox mplayer mencoder ffmpeg gtk-recordmydesktop
+yum install -y audacity brasero vlc npapi-vlc clementine rhythmbox mplayer mencoder ffmpeg gtk-recordmydesktop openshot radiotray
 
 # Nautilus extensions
 yum install -y nautilus-actions nautilus-image-converter nautilus-open-terminal nautilus-sendto nautilus-beesu-manager
 
 # Network - monitoring tool
-yum install -y nmap dsniff ettercap tcpdump sslstrip
+yum install -y nmap dsniff ettercap tcpdump sslstrip wireshark-gnome
 
 # Fonts
 yum install -y terminus-fonts-console
