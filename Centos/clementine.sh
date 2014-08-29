@@ -6,7 +6,7 @@ version="1.2.1"
 
 echo "Installing missing dependencies..."
 yum --enablerepo=epel install -y gcc-c++ liblastfm-devel taglib-devel gettext boost-devel \
-    qt-devel cmake gstreamer-devel gstreamer-plugins-base-devel glew-devel \
+    qt-devel cmake28 gstreamer-devel gstreamer-plugins-base-devel glew-devel \
     libgpod-devel libplist-devel usbmuxd-devel libmtp-devel protobuf-devel \
     protobuf-compiler qca2-devel libcdio-devel qca-ossl fftw-devel \
     sparsehash-devel sqlite-devel gstreamer-plugins-ugly \
